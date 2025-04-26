@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <title>My_PortFolio</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!--Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-custom shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-      <div class="container">
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-custom shadow-lg p-1 mb-5 bg-body-tertiary rounded">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="images/icon_2.png" alt="HermanRobo" width="45px" />
           Herman Robo</a
         >
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-current="page" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
@@ -138,11 +140,51 @@
         <a href="https://info.flagcounter.com/qU2E"
           ><img src="https://s01.flagcounter.com/count2/qU2E/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"
         /></a>
-        <div class="alert alert-primary" role="alert">© 2025 PT Robo Soft. All rights reserved. Developed by Herman.</div>
+        <!-- <div class="alert alert-primary" role="alert">© 2025 PT Robo Soft. All rights reserved. Developed by Herman.</div> -->
       </div>
     </section>
     <section id="blog"></section>
     <section id="team"></section>
-    <section id="contact"></section>
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>contact me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#007bff"
+          fill-opacity="1"
+          d="M0,160L60,170.7C120,181,240,203,360,192C480,181,600,139,720,128C840,117,960,139,1080,133.3C1200,128,1320,96,1380,80L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <footer class="bg-primary text-white text-center pb-3">
+      <p>
+        <i class="bi bi-c-circle-fill"></i> 2025 Created with <i class="bi bi-balloon-heart-fill text-danger"></i> Developed by
+        <a href="https://www.linkedin.com/in/herman-robo-9170534b/" class="text-white text-decoration-underline fw-bolder"> Herman Robo</a>
+      </p>
+    </footer>
   </body>
 </html>
