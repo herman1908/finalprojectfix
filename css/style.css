@@ -5,7 +5,7 @@
   background-size: auto;
   height: 1024px;
   color: #13e0ff;
-  padding: 200px;
+  padding: 100px;
   border-radius: 0;
 }
 
@@ -15,10 +15,10 @@
   width: 100%;
   z-index: 1004;
 }
-.navbar-custom a {
+/* .navbar-custom a {
   color: white;
   z-index: 1004;
-}
+} */
 .btn-primary {
   background-color: #183094;
   border-color: #183094;
