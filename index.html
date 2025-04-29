@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    
   </head>
   <body>
     <!--NavBar-->
@@ -256,6 +257,9 @@
             </div>
           </div>
         </div>
+        <div class="sticky-top">Jumlah kunjungan situs web:</div>
+   <div id="website-counter" class="badge bg-primary text-wrap" style="width: 6rem; margin: 20px"></div>
+   <!-- <button id="reset" type="button" class="btn btn-danger">Reset</button> -->
         <a href="https://info.flagcounter.com/qU2E"
           ><img src="https://s01.flagcounter.com/count2/qU2E/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"
         /></a>
@@ -323,5 +327,29 @@
         <a href="https://www.linkedin.com/in/herman-robo-9170534b/" class="text-white text-decoration-underline fw-bolder"> Herman Robo</a>
       </p>
     </footer>
+    
   </body>
 </html>
+
+<script>
+  var counterContainer = document.querySelector("#website-counter");
+  var resetButton = document.querySelector("#reset");
+  var visitCount = localStorage.getItem("page_view");
+ 
+  // Periksa apakah entri page_view ada
+  if (visitCount) {
+    visitCount = Number(visitCount) + 1;
+    localStorage.setItem("page_view", visitCount);
+  } else {
+    visitCount = 1;
+    localStorage.setItem("page_view", 1);
+  }
+  counterContainer.innerHTML = visitCount;
+ 
+  // Menambahkan jumlah view ketika onClick
+  resetButton.addEventListener("click", () => {
+    visitCount = 1;
+    localStorage.setItem("page_view", 1);
+    counterContainer.innerHTML = visitCount;
+  });
+</script>
